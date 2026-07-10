@@ -3,7 +3,6 @@ import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
 import PressFeature from "./components/PressFeature";
 import About from "./components/About";
-import OriginStory from "./components/OriginStory";
 import CareerHighlights from "./components/CareerHighlights";
 import SignatureShow from "./components/SignatureShow";
 import Experience from "./components/Experience";
@@ -26,7 +25,6 @@ function App() {
         <TrustBar />
         <About />
         <PressFeature />
-        <OriginStory />
         <CareerHighlights />
         <SignatureShow />
         <Experience />

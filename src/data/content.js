@@ -14,7 +14,6 @@ export const brand = {
 
 export const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Story", href: "#story" },
   { label: "Experience", href: "#experience" },
   { label: "Festivals", href: "#festivals" },
   { label: "Press", href: "#press" },
@@ -80,26 +79,6 @@ export const careerHighlights = [
   "Trusted by Global Brands, Festivals & Private Clients",
   "Television Features & Media Appearances",
 ];
-
-export const originStory = {
-  eyebrow: "The Story Behind the Name",
-  paragraphs: [
-    "When Farhanul Islam casually corrected someone's comment from \"black magic\" to \"brown magic\" on Facebook, he wasn't expecting it to define the rest of his career. But it stuck — and became more than a name. It became a brand, a persona, and a challenge to perceptions.",
-    "It started earlier than that, though. A televised David Blaine special hooked him on close-up magic — \"portable magic,\" as he calls it. As a teenager, he carried cheap playing cards to weddings across Bangladesh, using them to impress friends and, without realizing it, learning to design magic that wasn't just clever, but unpredictable.",
-    "Raised in Chittagong and schooled at Chittagong Grammar School through A-levels, he moved to Canada for his undergraduate studies. He landed his own magic series on his university's TV channel and spent eight years teaching there while building his craft on the side — before COVID-19 pushed him to go all-in on magic, full-time.",
-    "Before graduating, he'd already launched an educational company that went on to teach over 5,000 university students. A trip to Miami — where a conversation about happiness with a group of billionaires at an $18 million villa gathering turned into a suggestion he write it all down — led to his first book. It became an international bestseller. The second nearly did too.",
-  ],
-  quotes: [
-    {
-      text: "I don't like people saying 'wow.'",
-      attribution: "His magic is designed to interrupt, disorient, and — most importantly — make you feel.",
-    },
-    {
-      text: "Street magic impresses. Mentalism connects.",
-      attribution: "You touch on a memory no one else knows, and suddenly, the wall is down. They're not just watching a show — they're in it.",
-    },
-  ],
-};
 
 export const festivalOriginQuote = {
   text: "I was just warming up backstage at a gig in Mexico, showed a trick to someone, and they turned out to be the organisers. They booked me on the spot. I cried for six hours afterward.",
@@ -200,21 +179,6 @@ export const pressLogos = [
   "Star Hunt",
   "BPL T20",
   "What A Magic Show!",
-];
-
-export const mediaFeatures = [
-  {
-    caption: "Star Lifestyle — The Daily Star",
-    image: "media-daily-star-interview",
-  },
-  {
-    caption: "Eid Special Cooking Segment (Unilever / Aygaz)",
-    image: "media-cooking-show",
-  },
-  {
-    caption: "\"What A Magic Show\" — TV Panel",
-    image: "media-tv-panel",
-  },
 ];
 
 export const socialStats = [
