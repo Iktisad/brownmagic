@@ -88,6 +88,12 @@ export const signatureShow = {
     "Less illusion, more emotional immersion. Brown Magic's signature solo theatre show — where audiences don't just see the emotion, they feel it. An ongoing tour, also staged at Shena Prangon, Dhaka (20 June 2025).",
 };
 
+export const bplFeature = {
+  eyebrow: "Official Entertainer",
+  title: "Chittagong Kings — Bangladesh Premier League",
+  description: "The magician who introduced magic to the cricket stadium.",
+};
+
 export const legacyQuote = {
   eyebrow: "The Legacy Plan",
   text: "I want a kid in Rangpur to be able to say, 'I want to be a mentalist,' and have that dream mean something. They don't have to remember me — just that someone made it possible.",

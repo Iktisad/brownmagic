@@ -8,7 +8,7 @@ export default function Experience() {
   return (
     <section id="experience" className="relative bg-panel/40 py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid grid-cols-1 gap-14 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+        <div className="grid grid-cols-1 gap-14 md:grid-cols-[1fr_1.1fr] md:items-center">
           <div className="flex flex-col gap-8">
             <SectionHeading eyebrow={experienceIntro.eyebrow} title="Festival Performance Description" />
 
@@ -50,14 +50,14 @@ export default function Experience() {
             transition={{ duration: 0.6 }}
             className="grid grid-cols-2 gap-4"
           >
-            <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 aspect-3/4">
+            <div className="overflow-hidden rounded-2xl aspect-3/4">
               <img
                 src={fanCard1}
                 alt="A guest laughing during a Brown Magic close-up moment"
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="overflow-hidden rounded-2xl border border-white/10 aspect-3/4">
+            <div className="overflow-hidden rounded-2xl aspect-3/4">
               <img
                 src={fanCard2}
                 alt="A crowd reacting with surprise around Brown Magic"

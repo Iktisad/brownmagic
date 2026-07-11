@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { CheckIcon } from "./icons";
 import signaturePoster from "../assets/press/signature-poster-latest.jpg";
-import { careerHighlights, pressFeatures, signatureShow } from "../data/content";
+import bplHost from "../assets/press/bpl-host.jpg";
+import bplTrophy from "../assets/press/bpl-trophy.jpg";
+import { bplFeature, careerHighlights, pressFeatures, signatureShow } from "../data/content";
 
 function Cell({ className = "", delay = 0, children }) {
   return (
@@ -21,7 +23,9 @@ export default function FeaturedBento() {
   return (
     <section className="relative mx-auto max-w-6xl px-6 pb-28">
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.2fr_1fr]">
-        <Cell className="p-8">
+        <Cell className="relative isolate overflow-hidden p-8">
+          <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-gold/10 via-transparent to-violet-500/10" />
+
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-gold">Career Highlights</p>
           <ul className="grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
             {careerHighlights.map((item) => (
@@ -62,28 +66,56 @@ export default function FeaturedBento() {
         </Cell>
       </div>
 
-      <Cell
-        className="relative isolate mt-4 grid grid-cols-1 gap-6 overflow-hidden p-8 sm:grid-cols-[0.7fr_1.3fr] sm:items-center"
-        delay={0.2}
-      >
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-violet-500/10 via-transparent to-gold/10" />
+      <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <Cell
+          className="relative isolate grid grid-cols-1 gap-6 overflow-hidden p-8 sm:grid-cols-[0.7fr_1.3fr] sm:items-center"
+          delay={0.2}
+        >
+          <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-violet-500/10 via-transparent to-gold/10" />
 
-        <div className="w-full overflow-hidden rounded-xl">
-          <img src={signaturePoster} alt="The Mentalist — Live in Dhaka show poster" className="w-full" />
-        </div>
-        <div className="flex flex-col gap-2">
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
-            {signatureShow.eyebrow}
-          </span>
-          <h3 className="font-display text-xl uppercase leading-tight text-bone sm:text-2xl">
-            {signatureShow.title}
-          </h3>
-          <p className="text-xs uppercase tracking-wide text-bone/40">
-            {signatureShow.venue} · {signatureShow.date}
-          </p>
-          <p className="text-sm leading-relaxed text-bone/70">{signatureShow.description}</p>
-        </div>
-      </Cell>
+          <div className="w-full overflow-hidden rounded-xl">
+            <img src={signaturePoster} alt="The Mentalist — Live in Dhaka show poster" className="w-full" />
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
+              {signatureShow.eyebrow}
+            </span>
+            <h3 className="font-display text-xl uppercase leading-tight text-bone sm:text-2xl">
+              {signatureShow.title}
+            </h3>
+            <p className="text-xs uppercase tracking-wide text-bone/40">
+              {signatureShow.venue} · {signatureShow.date}
+            </p>
+            <p className="text-sm leading-relaxed text-bone/70">{signatureShow.description}</p>
+          </div>
+        </Cell>
+
+        <Cell className="relative isolate flex flex-col gap-4 overflow-hidden p-6" delay={0.3}>
+          <div className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-cyan-400/10 via-transparent to-gold/10" />
+
+          <div className="grid grid-cols-2 gap-2">
+            <div className="overflow-hidden rounded-xl">
+              <img src={bplHost} alt="Farhan at a Chittagong Kings BPL event" className="aspect-3/4 w-full object-cover" />
+            </div>
+            <div className="overflow-hidden rounded-xl">
+              <img
+                src={bplTrophy}
+                alt="Farhan pitch-side with the BPL T20 Runner-Up trophy"
+                className="aspect-3/4 w-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
+              {bplFeature.eyebrow}
+            </span>
+            <h3 className="font-display text-xl uppercase leading-tight text-bone sm:text-2xl">
+              {bplFeature.title}
+            </h3>
+            <p className="text-sm leading-relaxed text-bone/70">{bplFeature.description}</p>
+          </div>
+        </Cell>
+      </div>
     </section>
   );
 }
