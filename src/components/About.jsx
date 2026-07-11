@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import aboutIntroPoster from "../assets/press/about-intro-poster.jpg";
-import { aboutCopy, brand, idealFor, pullQuote } from "../data/content";
+import { aboutCopy, idealFor, pullQuote } from "../data/content";
 
 export default function About() {
   return (
@@ -22,24 +22,18 @@ export default function About() {
         </motion.div>
 
         <div className="flex flex-col gap-8">
-          <SectionHeading eyebrow="Introduction" title="The Brown Magic Experience" />
+          <SectionHeading
+            eyebrow="Introduction"
+            title={
+              <span className="font-signature normal-case">
+                The <span className="text-gold">Brown Magic</span> Experience
+              </span>
+            }
+          />
 
           <div className="flex flex-col gap-4 text-base leading-relaxed text-bone/70 sm:text-lg">
             {aboutCopy.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
-
-          <p className="font-signature text-3xl text-gold">Brown Magic</p>
-
-          <div className="flex flex-wrap gap-2">
-            {brand.selfDescription.map((trait) => (
-              <span
-                key={trait}
-                className="rounded-full border border-gold/25 px-3 py-1 text-xs uppercase tracking-[0.15em] text-gold/80"
-              >
-                {trait}
-              </span>
             ))}
           </div>
 

@@ -70,20 +70,14 @@ export const careerHighlights = [
   "Represented Bangladesh at FISM 2022 — The World Championship of Magic",
   "Official Entertainer – Chittagong Kings (BPL)",
   "\"The Mentalist\" — Sold-Out Solo Show, KIB Auditorium, Dhaka (2025)",
-  "One of the Few South Asian Mentalists to Perform Internationally at Tomorrowland",
+  "Only South Asian Mentalists to Perform Internationally at Tomorrowland",
   "Performed in 10+ Countries",
   "Published Author — International Bestseller",
-  "Founder of an EdTech Company — 5,000+ Students Taught",
   "Founder of the $1 Initiative — $60,000+ Raised for Charity",
   "\"The Brown Magic Experience\" — TV Series in Development for an OTT Platform",
   "Trusted by Global Brands, Festivals & Private Clients",
   "Television Features & Media Appearances",
 ];
-
-export const festivalOriginQuote = {
-  text: "I was just warming up backstage at a gig in Mexico, showed a trick to someone, and they turned out to be the organisers. They booked me on the spot. I cried for six hours afterward.",
-  attribution: "That adrenaline, that emotion — you can't script that.",
-};
 
 export const signatureShow = {
   eyebrow: "Signature Show",
@@ -125,38 +119,6 @@ export const experienceFeatures = [
 export const experienceClosing = [
   "Roaming through the crowd, Brown Magic creates raw, cinematic moments that feel like stepping into a lucid dream — blending psychology, illusion, and digital interaction into experiences that stop people in their tracks.",
   "Guests don't just watch. They react, engage, and remember. Built for organic reactions, viral moments, and real audience engagement.",
-];
-
-export const festivalStages = [
-  {
-    year: "2023",
-    name: "Tomorrowland (Core Stage)",
-    place: "Zamna, Tulum",
-    description:
-      "Performed within one of the world's most iconic electronic music brands, engaging high-energy international crowds in immersive environments.",
-  },
-  {
-    year: "2023",
-    name: "Bedouin Saga",
-    place: "Tulum",
-    description:
-      "Delivered intimate, emotionally-driven experiences in a curated, storytelling-focused festival setting.",
-  },
-  {
-    year: "Dec 31, 2022",
-    name: "Flying Circus",
-    place: "Tulum",
-    description:
-      "Integrated into underground electronic culture, performing in close, high-engagement crowd environments.",
-    poster: "flying-circus",
-  },
-  {
-    year: "2018 · 2019 · 2022",
-    name: "Burning Man",
-    place: "Black Rock City",
-    description:
-      "Participated in one of the world's most experimental and immersive art festivals, blending performance with radical audience interaction.",
-  },
 ];
 
 export const photoStrip = [

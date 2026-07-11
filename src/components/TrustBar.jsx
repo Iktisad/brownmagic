@@ -8,18 +8,23 @@ const logos = { tomorrowland: tomorrowlandLogo, "burning-man": burningManLogo };
 
 export default function TrustBar() {
   return (
-    <section className="border-y border-white/10 bg-ink-soft/60 py-14">
+    <section id="festivals" className="border-y border-white/10 bg-ink-soft/60 py-14">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeading eyebrow="Live Performances" title="As Seen At" align="center" />
+        <SectionHeading
+          eyebrow="Live Performances"
+          title="Trusted Across Global Festival Environments"
+          description="From underground dancefloors to world-renowned festival stages, Brown Magic delivers high-impact interactive experiences across diverse global audiences."
+          align="center"
+        />
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-16 gap-y-10">
+        <div className="mt-10 flex min-h-32 flex-wrap items-center justify-center gap-x-16 gap-y-10">
           {trustBar.map((item, i) => (
             <motion.div
               key={item.name}
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
+              whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.4, delay: i * 0.06 }}
+              transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
               className="flex h-32 w-56 flex-col items-center justify-center gap-2 opacity-80 transition hover:opacity-100"
             >
               {item.type === "logo" ? (

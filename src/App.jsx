@@ -7,7 +7,6 @@ import CareerHighlights from "./components/CareerHighlights";
 import SignatureShow from "./components/SignatureShow";
 import Experience from "./components/Experience";
 import Services from "./components/Services";
-import FestivalStages from "./components/FestivalStages";
 import PhotoStrip from "./components/PhotoStrip";
 import PressLogos from "./components/PressLogos";
 import SocialMetrics from "./components/SocialMetrics";
@@ -29,7 +28,6 @@ function App() {
         <SignatureShow />
         <Experience />
         <Services />
-        <FestivalStages />
         <PhotoStrip />
         <PressLogos />
         <SocialMetrics />
