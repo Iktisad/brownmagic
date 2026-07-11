@@ -1,10 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
-import PressFeature from "./components/PressFeature";
 import About from "./components/About";
-import CareerHighlights from "./components/CareerHighlights";
-import SignatureShow from "./components/SignatureShow";
+import FeaturedBento from "./components/FeaturedBento";
 import Experience from "./components/Experience";
 import Services from "./components/Services";
 import PhotoStrip from "./components/PhotoStrip";
@@ -23,9 +21,7 @@ function App() {
         <Hero />
         <TrustBar />
         <About />
-        <PressFeature />
-        <CareerHighlights />
-        <SignatureShow />
+        <FeaturedBento />
         <Experience />
         <Services />
         <PhotoStrip />

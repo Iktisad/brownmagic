@@ -12,7 +12,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="mx-auto w-full max-w-xs overflow-hidden rounded-2xl border border-white/10 md:mx-0"
+          className="w-full overflow-hidden rounded-2xl"
         >
           <img
             src={aboutIntroPoster}
