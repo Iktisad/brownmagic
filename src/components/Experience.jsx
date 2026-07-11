@@ -1,16 +1,47 @@
 import { motion } from "framer-motion";
-import SectionHeading from "./SectionHeading";
 import fanCard1 from "../assets/press/fan-card-1.jpg";
 import fanCard2 from "../assets/press/fan-card-2.jpg";
 import { experienceClosing, experienceFeatures, experienceIntro } from "../data/content";
 
+function CollageImage({ src, alt, className = "" }) {
+  return (
+    <div className={`absolute overflow-hidden rounded-lg ${className}`}>
+      <img src={src} alt={alt} className="h-full w-full object-cover" />
+    </div>
+  );
+}
+
 export default function Experience() {
   return (
-    <section id="experience" className="relative bg-panel/40 py-28">
+    <section id="experience" className="relative overflow-hidden bg-panel/40 py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid grid-cols-1 gap-14 md:grid-cols-[1fr_1.1fr] md:items-center">
-          <div className="flex flex-col gap-8">
-            <SectionHeading eyebrow={experienceIntro.eyebrow} title="Festival Performance Description" />
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:items-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6 }}
+            className="relative h-180 sm:h-205"
+          >
+            <CollageImage
+              src={fanCard2}
+              alt="A crowd reacting with surprise around Brown Magic"
+              className="right-0 top-0 h-96 w-3/4 rotate-2 shadow-2xl sm:h-112"
+            />
+            <CollageImage
+              src={fanCard1}
+              alt="A guest laughing during a Brown Magic close-up moment"
+              className="bottom-0 left-0 z-10 h-96 w-3/4 -rotate-2 shadow-2xl sm:h-112"
+            />
+          </motion.div>
+
+          <div className="flex flex-col gap-6">
+            <span className="hover-glitch inline-block w-fit text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              {experienceIntro.eyebrow}
+            </span>
+            <h2 className="font-display text-4xl uppercase leading-[0.95] text-bone sm:text-5xl">
+              Festival Performance Description
+            </h2>
 
             <p className="text-base leading-relaxed text-bone/70 sm:text-lg">{experienceIntro.lead}</p>
 
@@ -18,7 +49,7 @@ export default function Experience() {
               {experienceIntro.highlight}
             </p>
 
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-3">
               {experienceFeatures.map((feature, i) => (
                 <motion.li
                   key={feature}
@@ -42,29 +73,6 @@ export default function Experience() {
               ))}
             </div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.6 }}
-            className="grid grid-cols-2 gap-4"
-          >
-            <div className="overflow-hidden rounded-2xl aspect-3/4">
-              <img
-                src={fanCard1}
-                alt="A guest laughing during a Brown Magic close-up moment"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl aspect-3/4">
-              <img
-                src={fanCard2}
-                alt="A crowd reacting with surprise around Brown Magic"
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
