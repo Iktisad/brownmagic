@@ -135,18 +135,22 @@ export const photoStrip = [
 ];
 
 export const pressLogos = [
-  "CBC",
-  "Bell Media",
-  "MATV",
-  "NTV",
-  "BTV",
-  "Somoy TV",
-  "Channel 24",
-  "CORE",
-  "Family Feud",
-  "Star Hunt",
-  "BPL T20",
-  "What A Magic Show!",
+  { name: "CBC", type: "logo", image: "cbc" },
+  { name: "Bell Media", type: "logo", image: "bellmedia" },
+  { name: "MATV", type: "logo", image: "matv" },
+  { name: "NTV", type: "logo", image: "ntv" },
+  { name: "BTV", type: "logo", image: "btv" },
+  { name: "Somoy TV", type: "logo", image: "somoytv" },
+  { name: "Channel 24", type: "logo", image: "channel24" },
+  { name: "CORE", type: "text" },
+  { name: "Family Feud", type: "logo", image: "family-feud" },
+  { name: "Star Hunt", type: "logo", image: "deepto-star-hunt" },
+  { name: "BPL T20", type: "logo", image: "bpl-t20-alt" },
+  { name: "What A Magic Show!", type: "logo", image: "what-a-magic-show" },
+  { name: "Deepto TV", type: "logo", image: "deepto-tv" },
+  { name: "Burning Man", type: "logo", image: "burning-man-wordmark" },
+  { name: "Bedouin Saga", type: "logo", image: "bedouin-saga" },
+  { name: "ইত্যাদি", type: "logo", image: "etyadi" },
 ];
 
 export const socialStats = [
@@ -179,6 +183,7 @@ export const performanceOptions = [
     useCases: ["Weddings", "Cocktail Receptions", "Private Parties", "VIP Events"],
     duration: "1–3 Hours",
     featured: false,
+    image: "social-crowd",
   },
   {
     name: "Stage Experience",
@@ -186,6 +191,7 @@ export const performanceOptions = [
     useCases: ["Corporate Events", "Conferences", "Galas", "Award Ceremonies"],
     duration: "20–60 Minutes",
     featured: true,
+    image: "stage-cup-trick",
   },
   {
     name: "VIP Experience",
@@ -193,6 +199,7 @@ export const performanceOptions = [
     useCases: ["Celebrities", "Executive Events", "Brand Activations", "Private Dinners"],
     duration: "Flexible Format",
     featured: false,
+    image: "about-portrait",
   },
 ];
 

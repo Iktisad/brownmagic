@@ -20,12 +20,12 @@ function App() {
       <main>
         <Hero />
         <TrustBar />
+        <PressLogos />
         <About />
         <FeaturedBento />
         <Experience />
         <Services />
         <PhotoStrip />
-        <PressLogos />
         <SocialMetrics />
         <Reviews />
         <Legacy />
